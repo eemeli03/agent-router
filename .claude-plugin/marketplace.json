@@ -1,0 +1,18 @@
+{
+  "name": "agent-router",
+  "owner": {
+    "name": "Agent Router"
+  },
+  "plugins": [
+    {
+      "name": "router-codex",
+      "source": "./plugins/router-codex",
+      "description": "Personal coding agent in Slack"
+    },
+    {
+      "name": "router-claude",
+      "source": "./plugins/router-claude",
+      "description": "Personal coding agent in Slack"
+    }
+  ]
+}

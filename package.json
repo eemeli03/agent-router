@@ -1,0 +1,31 @@
+{
+  "name": "agent-router",
+  "version": "1.0.0",
+  "description": "Connect a personal coding agent to Slack",
+  "scripts": {
+    "start": "node src/main.mjs",
+    "start:router": "node src/shared-main.mjs",
+    "start:worker": "node src/worker.mjs",
+    "test": "node --test --test-concurrency=1 test/*.test.mjs",
+    "build:plugins": "node scripts/build-plugins.mjs",
+    "build:relay": "node scripts/build-connectors.mjs",
+    "pretest": "npm run build:relay"
+  },
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@anthropic-ai/claude-agent-sdk": "0.3.325",
+    "@slack/socket-mode": "2.0.7",
+    "@slack/web-api": "7.19.0",
+    "ws": "8.23.0",
+    "zod": "4.6.7"
+  },
+  "private": true,
+  "devDependencies": {
+    "esbuild": "0.28.2",
+    "wrangler": "4.162.0"
+  },
+  "engines": {
+    "node": ">=24"
+  }
+}

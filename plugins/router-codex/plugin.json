@@ -1,0 +1,23 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "router-codex",
+  "version": "1.0.0",
+  "description": "Connect your own Codex account to Slack through your self-hosted Agent Router.",
+  "author": {
+    "name": "Agent Router"
+  },
+  "extensions": {
+    "com.openai": {
+      "onboardingSkill": "./skills/connect/SKILL.md",
+      "interface": {
+        "displayName": "Agent Router for Codex",
+        "shortDescription": "Your personal coding agent in Slack",
+        "category": "Productivity",
+        "capabilities": [
+          "Read",
+          "Write"
+        ]
+      }
+    }
+  }
+}

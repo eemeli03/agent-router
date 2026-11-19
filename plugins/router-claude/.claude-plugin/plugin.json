@@ -1,0 +1,9 @@
+{
+  "name": "router-claude",
+  "version": "1.0.0",
+  "description": "Connect your own Claude Code account to Slack through your self-hosted Agent Router.",
+  "author": {
+    "name": "Agent Router"
+  },
+  "skills": "./skills/"
+}

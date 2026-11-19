@@ -1,0 +1,17 @@
+node_modules/
+state/
+.wrangler/
+.env
+.env.*
+*.env
+.dev.vars*
+*.log
+*.pem
+*.key
+*.p12
+*.sqlite*
+router.json
+worker.json
+config.json
+relay/bootstrap.mjs
+relay/public/downloads/

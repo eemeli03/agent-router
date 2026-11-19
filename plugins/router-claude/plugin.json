@@ -1,0 +1,23 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "router-claude",
+  "version": "1.0.0",
+  "description": "Connect your own Claude Code account to Slack through your self-hosted Agent Router.",
+  "author": {
+    "name": "Agent Router"
+  },
+  "extensions": {
+    "com.openai": {
+      "onboardingSkill": "./skills/connect/SKILL.md",
+      "interface": {
+        "displayName": "Agent Router for Claude Code",
+        "shortDescription": "Your personal coding agent in Slack",
+        "category": "Productivity",
+        "capabilities": [
+          "Read",
+          "Write"
+        ]
+      }
+    }
+  }
+}

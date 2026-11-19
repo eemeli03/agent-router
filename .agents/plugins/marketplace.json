@@ -1,0 +1,32 @@
+{
+  "name": "agent-router",
+  "interface": {
+    "displayName": "Agent Router"
+  },
+  "plugins": [
+    {
+      "name": "router-codex",
+      "source": {
+        "source": "local",
+        "path": "./plugins/router-codex"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "router-claude",
+      "source": {
+        "source": "local",
+        "path": "./plugins/router-claude"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
